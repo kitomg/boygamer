@@ -1,5 +1,5 @@
 <?php
-
+require_once "claseusuario/ControladorInicio";
 if (empty($_POST['usuario']) || empty($_POST['contrasena'])) {
     $redirigir = 'proyectofinal.php?mensaje=Error: Falta un campo obligatorio';
 } else {
