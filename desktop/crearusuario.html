@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Estilo para el fondo del body */
+        body {
+          background-color: #000080; /* Azul oscuro */
+          color: #FFFFFF; /* Blanco */
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+    
+        /* Estilo para el jumbotron */
+        .jumbotron {
+          background-color: #1E90FF; /* Azul brillante */
+          color: #FFFFFF; /* Blanco */
+          text-align: center;
+          padding: 20px;
+        }
+    
+        /* Estilo para el título "Bienvenido" */
+        .jumbotron h1 {
+          font-size: 36px;
+        }
+    
+        /* Estilo para los enlaces */
+        a {
+          text-decoration: none;
+          color: #1E90FF; /* Azul brillante */
+        }
+    
+        a:hover {
+          color: #000080; /* Azul oscuro */
+        }
+    
+        /* Estilo para los párrafos "Cargar videojuegos" y "Cerrar sesión" */
+        .text-center {
+          text-align: center;
+        }
+    
+        p.cargar-juegos, p.ver-videojuegos, p.cerrar-sesion {
+          margin: 10px 0;
+        }
+    
+        /* Estilo para los enlaces dentro de los párrafos */
+        p a {
+          color: #1E90FF; /* Azul brillante */
+        }
+    
+        p a:hover {
+          color: #000080; /* Azul oscuro */
+        }
+    
+        /* Estilo para el enlace "Cargar videojuegos" */
+        .cargar-juegos a {
+          background-color: #1E90FF; /* Azul brillante */
+          color: #FFFFFF; /* Blanco */
+          padding: 10px 20px;
+          border-radius: 5px;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+    
+        .cargar-juegos a:hover {
+          background-color: #000080; /* Azul oscuro */
+        }
+    
+        /* Estilo para el enlace "Ver Videojuegos Cargados" */
+        .ver-videojuegos a {
+          background-color: #1E90FF; /* Azul brillante */
+          color: #FFFFFF; /* Blanco */
+          padding: 10px 20px;
+          border-radius: 5px;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+    
+        .ver-videojuegos a:hover {
+          background-color: #000080; /* Azul oscuro */
+        }
+    
+        /* Estilo para el enlace "Cerrar sesión" */
+        .cerrar-sesion a {
+          font-size: 14px;
+        }
+      </style>
+    <title>Crear Usuario</title>
+</head>
+<body>
+    <h1>Crear Usuario</h1>
+    <form method="POST" action="crear_usuario.php">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" required><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" name="contrasena" required><br>
+
+        <label for="administrador">Administrador:</label>
+        <input type="checkbox" name="administrador" value="1"><br>
+
+        <input type="submit" value="Crear Usuario">
+    </form>
+    
+    
+    
+</body>
+</html>
